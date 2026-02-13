@@ -20,7 +20,7 @@ jobs:
         uses: invisirisk/pse-action@develop
         with:
           api_url: "https://app.stage.invisirisk.com"
-          app_token: ${{ secrets.IR_API_KEY_STAGE }}
+          app_token: ${{ secrets.IR_API_KEY }}
           mode: "docker-intercept"
           debug: true
           
@@ -128,6 +128,6 @@ jobs:
      uses: invisirisk/pse-action@develop
      with:
       api_url: "https://app.stage.invisirisk.com"
-      app_token: ${{ secrets.IR_API_KEY_STAGE }}
+      app_token: ${{ secrets.IR_API_KEY }}
       send_job_status: "true"
       debug: "true"
